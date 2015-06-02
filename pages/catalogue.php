@@ -98,7 +98,7 @@ if(empty($cat)) {
 	</div>
 	<div class="catalogue_wrapper_right">
 		<h4><a href="/?page=catalogue-item&amp;category=<?php echo $category['id']; ?>&amp;id=<?php echo $row['id']; ?>"><?php echo Helper::encodeHtml($row['name'], 1); ?></a></h4>
-		<h4>Price: <?php echo number_format($row['price'], 2)." "; echo Catalogue::$_currency; ?></h4>
+		<h4>Pret: <?php echo number_format($row['price'], 2)." "; echo Catalogue::$_currency; ?></h4>
 		<p><?php echo Helper::shortenString(Helper::encodeHtml($row['description'])); ?></p>
 		<p><?php echo Basket::activeButton($row['id']); ?></p>
 	</div>
